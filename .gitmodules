@@ -1,0 +1,3 @@
+[submodule "libraries/hackpro"]
+	path = libraries/hackpro
+	url = https://github.com/absoIute/Mega-Hack-Extensions
