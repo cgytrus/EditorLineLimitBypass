@@ -69,9 +69,9 @@ DWORD WINAPI mainThread(void*) {
     if(!mhLoaded())
         return 0;
 
-    auto window = MegaHackExt::Window::Create("Editor Line Limit Bypass");
+    auto window = MegaHackExt::Window::Create("Line Limit Bypass");
 
-    auto spinner = MegaHackExt::Spinner::Create("Line limit", "");
+    auto spinner = MegaHackExt::Spinner::Create("Limit: ", " lines");
     spinner->set(maxConfigVertexCount / 2);
     spinner->setCallback([](MegaHackExt::Spinner* obj, double value) {
         maxConfigVertexCount = static_cast<int32_t>(value) * 2;
